@@ -6,17 +6,17 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:9090/api/board/",
+			"name": "http://localhost:9191/api/board/",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9090/api/board/",
+					"raw": "http://localhost:9191/api/board/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9090",
+					"port": "9191",
 					"path": [
 						"api",
 						"board",
@@ -27,17 +27,17 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9090/api/board/6",
+			"name": "http://localhost:9191/api/board/6",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9090/api/board/6",
+					"raw": "http://localhost:9191/api/board/6",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9090",
+					"port": "9191",
 					"path": [
 						"api",
 						"board",
@@ -48,7 +48,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9090/api/board/write",
+			"name": "http://localhost:9191/api/board/write",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -69,12 +69,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9090/api/board/write",
+					"raw": "http://localhost:9191/api/board/write",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9090",
+					"port": "9191",
 					"path": [
 						"api",
 						"board",
