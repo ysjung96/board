@@ -1,7 +1,8 @@
 {
 	"info": {
-		"_postman_id": "6994b56b-2314-41db-a2a8-77c76dc75b22",
+		"_postman_id": "c1de85c4-014c-4f5a-b025-e5ab0271f2fb",
 		"name": "board",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -27,28 +28,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/board/6",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:9191/api/board/6",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "9191",
-					"path": [
-						"api",
-						"board",
-						"6"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:9191/api/board/write",
+			"name": "http://localhost:9191/api/board/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -69,7 +49,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9191/api/board/write",
+					"raw": "http://localhost:9191/api/board/",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -78,7 +58,168 @@
 					"path": [
 						"api",
 						"board",
-						"write"
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:9191/api/board/write",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"제목\",\n    \"contents\": \"내용\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9191/api/board/write",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9191",
+							"path": [
+								"api",
+								"board",
+								"write"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [],
+					"cookie": [],
+					"body": "{\n    \"respone\": \"ok\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9191/api/board/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"boardIdx\": 1,\n    \"title\": \"제목-\",\n    \"contents\": \"내용-\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/board/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"board",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:9191/api/board/write",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"제목\",\n    \"contents\": \"내용\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9191/api/board/write",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9191",
+							"path": [
+								"api",
+								"board",
+								"write"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [],
+					"cookie": [],
+					"body": "{\n    \"respone\": \"ok\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9191/api/board/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/board/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"board",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/board/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/board/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"board",
+						"1"
 					]
 				}
 			},
